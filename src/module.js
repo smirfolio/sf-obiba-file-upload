@@ -57,7 +57,7 @@ angular.module('sfObibaFileUpload', [
       };
     }];
   })
-  
+
   .config(['schemaFormProvider', 'schemaFormDecoratorsProvider', 'sfPathProvider', 'sfBuilderProvider',
   function (schemaFormProvider, schemaFormDecoratorsProvider, sfPathProvider, sfBuilderProvider) {
 
@@ -123,8 +123,6 @@ angular.module('sfObibaFileUpload', [
           $scope.form.validationMessage ?
             $scope.form.validationMessage :
             sfObibaFileUploadOptions.options.validationMessages;
-
-        console.log("$scope.form.validationMessage", $scope.form.validationMessage);
       });
 
       /**
