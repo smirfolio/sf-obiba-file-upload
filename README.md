@@ -45,7 +45,7 @@ The Definition:
 
 ```
 {
-  "key": "dox",
+  "key": "myFiles",
   "type": "obibaFileUpload",
   "emptyMessage": "No files uploaded",
   "validationMessage": {
