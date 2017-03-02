@@ -96,6 +96,7 @@ angular.module('sfObibaFileUpload', [
 
       if (schema.type === 'object' && schema.format === 'obibaFiles') {
         var f = schemaFormProvider.stdFormObj(name, schema, options);
+        f.onError = options.global.onError;
         f.key = options.path;
         f.type = 'obibaFileUpload';
         f.$validators = {
