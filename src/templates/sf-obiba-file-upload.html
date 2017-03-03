@@ -13,6 +13,7 @@
       <attachment-input ng-if="!form.readonly"
                         sf-field-model="replaceAll"
                         files="$$value$$.obibaFiles"
+                        on-error="form.onError"
                         multiple="form.schema.multiple"></attachment-input>
 
       <attachment-list ng-if="form.readonly"
